@@ -13,16 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -35,4 +25,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+header {
+  height: 100%;
+  background-color: #038c4c;
+  color: #f2d8c2;
+}
+
+header h1 {
+  margin: 0;
+  padding: 5vh;
+}
+
+body {
+  height: 100vh;
+  background-color: #03a65a;
+
+}
+.now-playing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+.movie-card {
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 250px;
+  background-color:#525759;
+  color: #f2f2f2;
+  margin-top: 3vh;
+  box-shadow: 3px 3px 5px 0 rgba(0,0,0, 0.7);
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.1)
+}
+
+.movie-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.movie-details-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+.movie-details-title {
+  font-size: 3vw;
+}
+
+.movie-details-image img{
+  border-radius: 10px;
+  width: 60vw;
+  margin: 15px;
+  box-shadow: 2px 4px 5px 0 rgba(0,0,0, 0.7);
+}
+
+.movie-details-overview {
+  font-size: 18px;
+  width: 60vw;
+  
 }

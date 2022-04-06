@@ -1,4 +1,4 @@
-const { Get_Now_Playing } = require('../types')
+const { GET_NOW_PLAYING } = require('../types')
 
 const iState = {
   nowPlaying: []
@@ -6,7 +6,7 @@ const iState = {
 
 const NowPlayingReducer = (state = iState, action) => {
   switch (action.type) {
-    case Get_Now_Playing:
+    case GET_NOW_PLAYING:
       return { ...state, nowPlaying: action.payload }
     default:
       return { ...state }
